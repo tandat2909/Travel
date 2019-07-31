@@ -36,22 +36,12 @@
 .back_link a:hover{
   opacity: 0.5;
 }
-.row_1{
-  max-height: 200px;
-  position: relative;
-  margin-top: 40px;
-}
-.row_2{
+.row{
   max-height: 200px;
   position: relative;
   margin-top: 40px;
 }
 
-.row_3{
-  max-height: 200px;
-  position: relative;
-  margin-top: 40px;
-}
 .animation_zoom_photo img{
 
 transition: all 1.5s ease;
