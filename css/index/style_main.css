@@ -55,7 +55,7 @@ div.title button {
 
 /*css special silde*/
 
-.special {
+#special {
     display: -webkit-inline-box;
     margin-left:90px;
     position: relative;
@@ -66,7 +66,7 @@ div.title button {
 .item {
     margin-left: 30px;
     display: table;
-    width: 14.09%;
+    width: 315px;
     border: 0.7px solid #9890907a;
     border-radius: 8px 8px 7px 7px;
     box-shadow: 0px 0px 3px #a48d8d;
@@ -163,4 +163,16 @@ div.bt-sp > i:hover{
 
 .animation-sp{
     transition: transform 0.8s ease-out;
+}
+
+
+/* best- vietnam - tuor -packages*/
+.best-vn-tuor .item {
+    margin-left: 30px;
+    display: table;
+    width: 315px;
+    border: 0.7px solid #9890907a;
+    border-radius: 8px 8px 7px 7px;
+    box-shadow: 0px 0px 3px #a48d8d;
+    transition: transform 0.8s ease-out ;
 }

@@ -1,7 +1,7 @@
 //============= animation-spECIAL DEALS================================
        
 
-var sp_items = document.getElementsByClassName('item'); 
+var sp_items = document.getElementById("special").getElementsByClassName("item"); 
         var sp_items_lenght = sp_items.length ; // so phan tu item
         var width=0; // chieu dai cua item
 
@@ -45,3 +45,4 @@ var sp_items = document.getElementsByClassName('item');
                 add_animation(width);
             }
         }
+setInterval(function(){right_sp();}, 2000);
