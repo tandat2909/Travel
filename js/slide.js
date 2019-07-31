@@ -2,52 +2,73 @@
 	var max = document.getElementsByClassName('run').length;
 	var min = 0;
 
+	function itemID(stt)
+	{
+		return document.getElementById(stt)
+	}
+	
 	function prev () {
 		stt--;
 		if(stt < min)
 		{
 			
-			document.getElementById(stt+1).style.display="none";
+			itemID(stt+1).style.display="none";
 			stt = max;
-			document.getElementById(stt).style.display="block";
-			//document.getElementById(stt).attr('class',animation);
+			itemID(stt).style.display="block";
 		}
 		else
 		{
-			document.getElementById(stt+1).style.display="none";
+			itemID(stt+1).style.display="none";
 			if(stt-1 == -1)
-			document.getElementById(0).style.display="block";
+			itemID(0).style.display="block";
 			else
-			document.getElementById(stt).style.display="block";
-			//document.getElementById(stt).attr('class',animation);
+			itemID(stt).style.display="block";
+			
 			
 		}
 		
 		console.log('item prev: ' + stt  );
 	}
+	
+	
 
 	function next () {
 		stt++;
 		if(stt > max)
 		{
 			
-			document.getElementById(stt-1).style.display="none";
+			itemID(stt-1).style.display="none";
 			stt = min;
-			document.getElementById(stt).style.display="block";
-			//document.getElementById(stt).attr('class',animation);
+			itemID(stt).style.display="block";
+			
 		}
 		else
 		{
-			document.getElementById(stt-1).style.display="none";
+			itemID(stt-1).style.display="none";
 			if(stt + 1 == max + 1)
-			document.getElementById(max).style.display="block";
+			itemID(max).style.display="block";
 			else
-			document.getElementById(stt).style.display="block";
-			//document.getElementById(stt).attr('class',animation);
+			itemID(stt).style.display="block";
+			
 		
 		}
 		
 		console.log('item next: ' + stt  );
 	}
 
-	setInterval(next().click, 4000);
+	setInterval(function(){next();}, 4000);
+
+
+	
+
+
+	
+/*
+	var a = document.getElementById("uhchatboz")
+	a.onclick= function (){
+		if(a.style.bottom == "-320px")
+			a.style.bottom = "0px";
+		else
+			a.style.bottom = "-320px";
+	}
+	*/
