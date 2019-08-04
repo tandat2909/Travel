@@ -70,21 +70,23 @@ ul.Taps > li{
   border-bottom: 1px solid #CECECE;
 }
 
-ul.Taps > li:hover{
+ul.Taps > li:hover
+{
   background-color: snow;
   /*border-bottom: none;*/
-  
   border-bottom: none;
 
 }
-ul.Taps > li.active{
+
+ul.Taps > li.active
+{
   
   background: white;
   border: 1px solid #CECECE;
   border-bottom: none;
   border-top: none;
-
 }
+
 div.TapContent{
   background-color: white;
   font-size: 16px;
