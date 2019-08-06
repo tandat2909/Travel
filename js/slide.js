@@ -56,19 +56,22 @@
 		console.log('item next: ' + stt  );
 	}
 
-	setInterval(function(){next();}, 4000);
 
 
-	
+
+	 var aaa = setInterval(function(){next();}, 3000);
+        $("#next,#prev").on({
+            mouseenter: function(){clearInterval(aaa);},
+           mouseleave: function(){setInterval(function(){next();}, 3000);}
+        });
 
 
-	
-/*
-	var a = document.getElementById("uhchatboz")
-	a.onclick= function (){
-		if(a.style.bottom == "-320px")
-			a.style.bottom = "0px";
+// an chatbot
+	var chatbot = document.getElementById("uhchatboz")
+	chatbot.onclick= function (){
+		if(chatbot.style.bottom == "-320px")
+			chatbot.style.bottom = "0px";
 		else
-			a.style.bottom = "-320px";
+			chatbot.style.bottom = "-320px";
 	}
-	*/
+	

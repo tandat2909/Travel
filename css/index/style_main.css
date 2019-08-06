@@ -1,12 +1,13 @@
-.main {
-    max-width: 90%;
-    left: 94px;
-    position: relative;
-   
+main {
+
+    font-family: 'Roboto'; 
 }
 /*CSS SPECIAL*/
 div.title {
     padding-bottom: 30px;
+    max-width: 90%;
+    left: 94px;
+    position: relative;
 }
 
 div.title>h1 {
@@ -167,12 +168,78 @@ div.bt-sp > i:hover{
 
 
 /* best- vietnam - tuor -packages*/
+.best-vn-tuor{
+
+    width: 80%;
+    margin: 0 auto;
+
+
+}
+
 .best-vn-tuor .item {
     margin-left: 30px;
     display: table;
-    width: 315px;
+    width: 34%;
     border: 0.7px solid #9890907a;
     border-radius: 8px 8px 7px 7px;
     box-shadow: 0px 0px 3px #a48d8d;
-    transition: transform 0.8s ease-out ;
+    
+}
+.container{
+    width: 85%;
+    margin: 3% auto;
+    line-height: 1.7;
+    display: flex;
+
+}
+.left-container button {
+    border: none;
+    line-height: 1.8;
+    word-spacing: 6px;
+    background: #09b51e;
+    box-shadow: 0px 0px 3px #0d0101c4;
+    border-radius: 2px 2px 2px 2px;
+    margin-top: 8px; 
+}
+.left-container button:hover{
+    background:#9932ccfa ;
+}
+.left-container button:active {
+    background: #7514a5ab;
+}
+.container  h1{ 
+    font-size: 23px;
+     font-weight: bold;
+     font-family:  sans-serif;
+     color: #747473;
+
+}
+.fa.fa-check{
+    color: #ff5e00;
+}
+.right-container{
+    margin-left: 15%;
+    width: 40%;
+}
+
+.left-container > ul > li{
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.right-container .review{
+    border: 1px solid #00a680;
+    border-radius: 2px 2px 2px 2px;
+    padding: 10px;
+}
+.right-container p{
+    color: #b7b7b7;
+    font-size: 11px;
+    
+}
+.right-container hr{
+    margin: 2px;
+}
+.fas.fa-star{
+    color: #fee403;
 }
