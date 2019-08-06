@@ -64,9 +64,12 @@
             mouseenter: function(){clearInterval(aaa);},
            mouseleave: function(){setInterval(function(){next();}, 3000);}
         });
+function init()
+{
+	new WOW().init();
+}
 
-
-// an chatbot
+//an chatbot
 	var chatbot = document.getElementById("uhchatboz")
 	chatbot.onclick= function (){
 		if(chatbot.style.bottom == "-320px")

@@ -114,3 +114,25 @@ letter-spacing: 1px;
 
   color: yellow;
 }
+
+.row_1 > img {
+  
+  animation-name: slideInLeft;
+}
+.row_2 > img {
+
+  animation-name: slideInLeft;
+}
+.row_3 > img {
+
+  animation-name: slideInLeft;
+}
+
+div.info {
+
+  animation-name: slideInUp;
+}
+.price{
+
+  animation-name: slideInRight;
+}
