@@ -1,0 +1,194 @@
+/* CSS MAIN */
+body{
+  font-family: 'Roboto';
+  background-color: #f5f5f5;
+  margin: 0px;
+}
+li{
+  list-style-type: none;
+}
+div.main{
+  width: 70%;
+  margin-left: 50px;
+  font-size: 14px;
+  word-spacing: 3px;
+  overflow: hidden;
+  line-height: 1.5;
+}
+div.TourName{
+  overflow: hidden;
+  background-color: rgb(233, 234, 235, 1);
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+div.TourName > h1{
+  padding: 5px;
+  margin: 0 0 0 50px;
+  float: left;
+}
+div.TourName > ul > li{
+  float: right;
+}
+div.TourName > ul > li > a{
+  color: black;
+  padding: 15px;
+}
+div.TourName > ul > li > a:hover{
+  background-color: blue;
+  color: white;
+}
+div.TourContent{
+  margin-left: 400px;
+  font-size: 18px;
+}
+div.ContentHeader{
+  overflow: auto;
+  font-size: 16px;
+  word-spacing: 4px;
+}
+div.TapsContent{
+  margin: 30px 0 0 0;
+  border: 2px solid #CECECE;
+  border-top: 1.7px solid #CECECE; 
+}
+div.Taps{
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+}
+.Row-style1{
+  display: flex;
+  background-color: #f4f2f3;
+  color: black;
+  text-align: center;
+}
+.Row-style2{
+  display: flex;
+  background-color: #f4f2f3;
+  color: black;
+  text-align: center;
+}
+.Row-style1 > div{
+  width: 50%; 
+}
+.Row-style1 > div > p:first-child{
+  border-right: 1px solid #CECECE;
+}
+.Row-style1 > div > p{
+  border-bottom: none;
+}
+.Row-style2 > div{
+  width: 100%;
+}
+.Row-style2 > div > p{
+  border-bottom: 1px solid #CECECE;
+}
+.Taps div div p{
+  margin: 0;
+  padding: 20px 0 20px 0;
+  text-align: center;
+  cursor: pointer;
+  border-top: 1px solid #CECECE;
+}
+.Taps p.tap-link:hover{
+  background-color: snow;
+}
+.Taps p.tap-link.active{
+  background: white;
+  border-bottom: none;
+}
+div.TapContent{
+  background-color: white;
+  font-size: 16px;
+  padding: 20px;
+
+}
+div.TapContent > h4{
+  padding-top: 10px;
+  font-weight: bold;
+  color: orange;
+}
+div.TapContent > h4 + p{
+  font-style: italic;
+  font-weight: bold;
+}
+div.TapContent a{
+  color: #0099cc;
+}
+div.TapsContent > div.TapContent{
+  display: none;
+}
+#TapContent1{
+  display: block;
+}
+#TapContent2 > h4:first-child{
+  color: green;
+}
+#TapContent3 > h4:first-child{
+  color: green;
+}
+#TapContent4 > h4{
+  color: black;
+}
+div.row-img{
+  overflow: auto;
+}
+div.row-img div{
+  float: left;
+  padding: 7px;
+}
+div.row-img > div{
+  width: 31%;
+}
+div.row-img > div > img{
+  width: 100%;
+}
+div.BookTour{
+  padding-top: 30px;
+}
+div.BookTour > a{
+  background-color: #0db4ff;
+  padding: 20px;
+  border-radius: 3px;
+  color: white;
+}
+div.BookTour > a:hover{
+  background-color: #0096d9; 
+}
+div.OtherTours{
+  margin-top: 100px;
+  line-height: 1.7;
+}
+div.OtherTours > p{
+  font-size: 20px;
+}
+div.OtherTours > ul{
+  margin: 0;
+  padding: 0;
+}
+div.OtherTours > ul > li > a{
+  color: #005694;
+  font-size: 18px;
+}
+div.OtherTours > ul > li > a:hover{
+  color: #0db4ff;
+  text-decoration: underline;
+}
+div.LinkOtherTours{
+  margin: 0;
+  float: right;
+  width: 20%;
+}
+div.LinkOtherTours > ul{
+  margin: 0;
+  padding: 0;
+}
+div.LinkOtherTours > ul > li{
+  margin-top: 20px;
+}
+div.LinkOtherTours > ul > li > a{
+  color: black;
+}
+div.LinkOtherTours > ul > li > a:hover{
+  text-decoration: underline;
+}
