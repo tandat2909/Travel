@@ -45,8 +45,11 @@ var sp_items = document.getElementById("special").getElementsByClassName("item")
                 add_animation(width);
             }
         }
-        var a = setInterval(function(){right_sp();}, 3000);
+
+        var rightclick = document.getElementById("right_sp");
+        var left_sp = document.getElementById("left_sp");
+        var a_sp = setInterval(function(){rightclick.onclick();}, 3000);
         $("#right_sp,#left_sp").on({
-            mouseenter: function(){clearInterval(a);},
-           mouseleave: function(){setInterval(function(){right_sp();}, 3000);}
+           mouseenter: function(){clearInterval(a_sp);},
+           mouseleave: function(){rightclick.oncl}
         });
