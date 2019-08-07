@@ -362,6 +362,31 @@
             </div>
         </div>
      </main>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <style>
+                        
+                        .fa.fa-star:hover{
+
+                                color: yellow;
+                        }
+                    </style>
+                    <script type="text/javascript">
+                        var lis = document.getElementsByClassName('fa fa-star')
+                        console.log(lis);
+                        var lenght = 2
+
+                        function hover(){
+                        for (var i = 0; i < lenght ; i++) {
+                           lis[i].style.color = 'yellow';
+                        }
+                        onmouseenter(function(){hover();})
+                    }
+
+                    </script>
 
     <footer id="footer" class="wow fadeInUp" style="visibility: hidden">
         <div class="footer">

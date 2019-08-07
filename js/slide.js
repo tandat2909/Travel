@@ -31,6 +31,7 @@
 	}
 	
 	
+	
 
 	function next () {
 		stt++;
