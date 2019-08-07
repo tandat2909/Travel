@@ -329,22 +329,6 @@
                 menu.style.backgroundColor = "#4f3c3c4a";
 
         });
-	</script>
-		<script type="text/javascript">
-			function opentap(e, tapId)
-			{
-				var i, tapcontent, tablink;
-				tapcontent = document.getElementsByClassName("TapContent");
-				for (i = 0; i < tapcontent.length; i++)
-					tapcontent[i].style.display = 'none';
-				tapcontent[tapId].style.display = 'block';
-				tablinks = document.getElementsByClassName("tab-link");
-	  			for (i = 0; i < tablinks.length; i++){
-	    			tablinks[i].className = tablinks[i].className.replace(" active", " ");
-	  			}
-				e.currentTarget.className += " active";
-			}
-		</script>
-		<script src="../js/slide.js"> </script>
+	<script src="../js/slide.js"> </script>
 	</body>
 </html>
