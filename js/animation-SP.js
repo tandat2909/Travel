@@ -46,10 +46,9 @@ var sp_items = document.getElementById("special").getElementsByClassName("item")
             }
         }
 
-        var rightclick = document.getElementById("right_sp");
-        var left_sp = document.getElementById("left_sp");
-        var a_sp = setInterval(function(){rightclick.onclick();}, 3000);
+        
+        var a_sp = setInterval(function(){right_sp();}, 3000);
         $("#right_sp,#left_sp").on({
            mouseenter: function(){clearInterval(a_sp);},
-           mouseleave: function(){rightclick.oncl}
+           mouseleave: function(){setInterval(function(){right_sp();}, 3000);}  
         });

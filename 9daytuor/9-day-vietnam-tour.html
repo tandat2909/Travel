@@ -8,7 +8,7 @@
 		<link rel="shortcut icon" type="image/png" href="icon/logo.png"> 
 		<link href="../css/animate.css" rel="stylesheet"/>
 		
-		<script src="../js/TapTap.js"></script>
+		
 		<script src="https://code.jquery.com/jquery-1.8.3.min.js"> </script>
 		
 		<link href="IconAll/Icon/css/all.min.css" rel="stylesheet">
@@ -148,9 +148,9 @@
 				</div>
 				<div class="TapsContent">
 					<ul class="Taps">
-						<li class="tab-link active " onclick="opentap(event, 0)">Overview</li>
-						<li class="tab-link  " onclick="opentap(event, 1)">9 Day Vietnam Tour Itinerary</li>
-						<li class="tab-link " onclick="opentap(event, 2)">Prices and Inclusions</li>
+						<li class="tab-link active" onclick="opentap(event, 0)">Overview</li>
+						<li class="tab-link" onclick="opentap(event, 1)">9 Day Vietnam Tour Itinerary</li>
+						<li class="tab-link" onclick="opentap(event, 2)">Prices and Inclusions</li>
 						<li class="tab-link" onclick="opentap(event, 3)">Gallery</li>
 					</ul>
 					<div class="TapContent" id="TapContent1" style="display: block;">
@@ -331,5 +331,23 @@
         });
     </script>
 	<script src="../js/slide.js"> </script>
+
+	<script >
+		
+	function opentap(e, tapId){
+		var i, tapcontents, tablink;
+		tapcontents = document.getElementsByClassName("TapContent");
+		for (i = 0; i < tapcontents.length; i++)
+			tapcontents[i].style.display = 'none';
+		tapcontents[tapId].style.display = 'block';
+	    tapcontents[tapId].classList.add('animated', 'fadeInUp');    
+
+		tablinks = document.getElementsByClassName("tab-link");
+	  	for (i = 0; i < tablinks.length; i++){
+	    	tablinks[i].className = tablinks[i].className.replace(" active", " ");
+	  	}
+		e.currentTarget.className += " active";
+	}
+	</script>
 	</body>
 </html>
