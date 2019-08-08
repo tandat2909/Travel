@@ -1,0 +1,51 @@
+/* CSS MAIN */
+body{
+  font-family: 'Roboto';
+  margin: 0px;
+}
+li{
+  list-style-type: none;
+}
+div.main{
+  width: 70%;
+  margin-left: 50px;
+  font-size: 14px;
+  word-spacing: 3px;
+  overflow: hidden;
+  line-height: 1.5;
+}
+div.TourName{
+  overflow: hidden;
+  background-color: rgb(233, 234, 235, 1);
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+div.TourName > h1{
+  padding: 5px;
+  margin: 0 0 0 50px;
+  float: left;
+}
+div.TourName > ul > li{
+  float: right;
+}
+div.TourName > ul > li > a{
+  color: black;
+  padding: 15px;
+}
+div.TourName > ul > li > a:hover{
+  background-color: blue;
+  color: white;
+}
+div.LinkOtherTours{
+  margin: 20px 0 0 0;
+  float: right;
+  width: 20%;
+}
+div.LinkOtherTours a{
+  cursor: pointer;
+  font-size: 16px;
+  color: black;
+}
+div.LinkOtherTours a:hover{
+  text-decoration: underline;
+}

@@ -1,14 +1,14 @@
 
 //dataBase
 var dataBase = new Array();
-						  //ID 		NameTuor			Itinerary					prie
+					  //ID 		NameTuor			Itinerary					prie
 	dataBase[0] = new Array("100","9 Day Vietnam Tour","9 Day Vietnam Tour Itinerary",645)
 	dataBase[1] = new Array("101","13 Day Highlights of Vietnam with Sapa Trek","13 Day Highlights of Vietnam Tour Itinerary",970)
 	dataBase[2] = new Array("102","14 Day Spectacular Vietnam Tour","14 Day Spectacular Vietnam Itinerary",1200)
 	dataBase[3] = new Array("201",'10 Day Highlights of Vietnam tour','10 Day Vietnam Tour starts from Hanoi',529)
 	dataBase[4] = new Array("202","4 Day Southern Vietnam Tour","4 Day Southern Vietnam Itinerary",175)
-	dataBase[4] = new Array("203","5 Day Southern Vietnam Tour","5 Day Southern Vietnam Tour Itinerary",255)
-	dataBase[5] = new Array("204","6 Day Northern Vietnam Tour","6 Day Northern Vietnam Tour Itinerary ",230)
+	dataBase[5] = new Array("203","5 Day Southern Vietnam Tour","5 Day Southern Vietnam Tour Itinerary",255)
+	dataBase[6] = new Array("204","6 Day Northern Vietnam Tour","6 Day Northern Vietnam Tour Itinerary ",230)
 
 	var ID = localStorage.getItem("id"); //get ID
 	// search ID in dataBase
@@ -21,7 +21,6 @@ var dataBase = new Array();
 	}
 	
 	output()
-
 
 
 	function convertToVND(mony)
