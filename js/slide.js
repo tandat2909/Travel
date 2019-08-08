@@ -79,3 +79,8 @@ function init()
 			chatbot.style.bottom = "-320px";
 	}
 	
+// set locd
+		function setid(id)
+		{
+			localStorage.setItem("id", id);
+		}
