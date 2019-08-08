@@ -54,21 +54,16 @@
 		
 		}
 		
-		console.log('item next: ' + stt  );
+		console.log('item next: ' + stt);
 	}
 
 
 
 
-	 var aaa = setInterval(function(){next();}, 3000);
-        $("#next,#prev").on({
-            mouseenter: function(){clearInterval(aaa);},
-           mouseleave: function(){setInterval(function(){next();}, 3000);}
-        });
-function init()
-{
-	new WOW().init();
-}
+	setInterval(function(){next();}, 3000);
+   
+
+
 
 //an chatbot
 	var chatbot = document.getElementById("uhchatboz")
@@ -78,9 +73,26 @@ function init()
 		else
 			chatbot.style.bottom = "-320px";
 	}
+
+	
 	
 // set locd
 		function setid(id)
 		{
 			localStorage.setItem("id", id);
 		}
+		////////////////////////////////////////////////////////////
+		
+		 window.addEventListener("scroll", 
+
+		 	function() 
+		 	{
+	           
+	        
+	            if (pageYOffset > 380) {
+	                menu.style.backgroundColor = "#8c56c79c";
+
+	            } else
+	                menu.style.backgroundColor = "#4f3c3c4a";
+        	}
+        )
