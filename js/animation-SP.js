@@ -45,10 +45,3 @@ var sp_items = document.getElementById("special").getElementsByClassName("item")
                 add_animation(width);
             }
         }
-
-        
-        var a_sp = setInterval(function(){right_sp();}, 3000);
-        $("#right_sp,#left_sp").on({
-           mouseenter: function(){clearInterval(a_sp);},
-           mouseleave: function(){setInterval(function(){right_sp();}, 3000);}  
-        });
