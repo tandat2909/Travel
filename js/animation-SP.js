@@ -45,3 +45,4 @@ var sp_items = document.getElementById("special").getElementsByClassName("item")
                 add_animation(width);
             }
         }
+        setInterval(function(){right_sp();},2000);
