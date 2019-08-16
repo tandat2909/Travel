@@ -20,7 +20,7 @@ var sp_items = document.getElementById("special").getElementsByClassName("item")
         function right_sp()
         {
             width -=110 ;
-            if(width >= -(sp_items_lenght -4)*110) // (sp_items_lenght -4) = so item an chua hien thi ; 4 là số item được hiển thị mặc định "action" 
+            if(width >= -(sp_items_lenght - 4)*110) // (sp_items_lenght -4) = so item an chua hien thi ; 4 là số item được hiển thị mặc định "action" 
                           
                 add_animation (width);
               

@@ -1,4 +1,3 @@
-
 //dataBase
 var dataBase = new Array();
 					  //ID 		NameTuor			Itinerary					prie
@@ -20,7 +19,19 @@ var dataBase = new Array();
 		}
 	}
 	
-	output()
+	output();
+
+	//set date book tuor;
+	var time = new Date();
+	day = time.getDate();
+
+	alert(day);
+
+
+
+
+
+
 
 
 	function convertToVND(mony)
@@ -28,7 +39,7 @@ var dataBase = new Array();
 		return mony*23175.95;
 	}
 
-
+	// format Number
 	function formatNumber(nStr, decSeperate, groupSeperate) {
             nStr += '';
             x = nStr.split(decSeperate);
@@ -40,10 +51,9 @@ var dataBase = new Array();
             }
             return x1 + x2;
         }
+
 	function totalAmount()
 	{
-	
-
 		var adults=parseFloat(document.getElementById('adults').value);
 		var free75 = parseFloat(document.getElementById('free75').value);
 		var total = dataBase[ID][3];
