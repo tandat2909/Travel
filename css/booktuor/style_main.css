@@ -31,3 +31,22 @@
 .align-left {
     padding-left: 15px;
 }
+
+.format_form .enter:valid {
+    outline: none;
+    border: 1.5px solid #1ac71ac2;
+    padding-left: 2px;
+}
+
+.format_form .enter:invalid {
+    outline: none;
+    border: 1.5px solid #ff4400c2;
+    padding-left: 2px;
+}
+input#submit{
+    margin-left: 11em;
+    margin-top: 1em;
+    padding: 2px;
+    font-size: 1.1rem;
+     
+}

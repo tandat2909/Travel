@@ -125,7 +125,7 @@
 	</div>
 
 	<div id="title">
-	    <span>Book Tuor</span>
+	    <span>Book Tour</span>
 	</div>
 	
 
@@ -155,7 +155,7 @@
 	                </tr>
 	                <tr>
 	                    <td class="align-right " height="49 ">Departure<span style="color:red; ">*</span>:</td>
-	                    <td class="align-left " colspan="2 "><input style="width:170px;height:30px; text-indent: 10px; " type="date"  required min="2019-07-01" > </td>
+	                    <td class="align-left " colspan="2 "><input id="departure" class="enter" style="width:170px;height:30px; text-indent: 10px; " type="date"  required > </td>
 
 	                </tr>
 	                <tr>
@@ -164,9 +164,10 @@
 
 	                </tr>
 	                <tr>
-	                    <td class="align-right ">Adults:</td>
+	                    <td class="align-right ">Adults<span style="color:red; ">*</span>:</td>
 	                    <td class="align-left " colspan="2 ">
-	                        <select id="adults" onchange="totalAmount()" style="width: 60px; height: 30px; ">
+	                        <select id="adults" class="enter" onchange="totalAmount()" required style="width: 60px; height: 30px;" >
+								<option value=""></option>
 								<option value="1">1</option>
 								<option value="2">2</option>
 								<option value="3">3</option>
@@ -206,7 +207,7 @@
 								<option value="9">9</option>
 								<option value="10">10</option>
 							</select><span> &emsp; 0-5 age (Free)</span></td>
-	                    <td width="372 "><select id="free75" onchange="totalAmount()" style="width: 60px; height: 30px; ">
+	                    <td width="372 "><select id="free75" class="enter" onchange="totalAmount()" required style="width: 60px; height: 30px; ">
 								<option value="0">0</option>
 								<option value="1">1</option>
 								<option value="2">2</option>
@@ -238,7 +239,8 @@
 
 	                <tr>
 	                    <td class="align-right " height="39 "><label>Gender<span style="color:red; ">*</span>:</label></td>
-	                    <td class="align-left " colspan="2 "><select id="gender " style="width: 60px; height: 30px; ">
+	                    <td class="align-left " colspan="2 "><select id="gender" required class="enter" style="width: 60px; height: 30px; ">
+								<option value=""></option>
 								<option value="Mr ">Mr</option>
 								<option value="Ms ">Ms</option>
 								<option value="Msr ">Msr</option>
@@ -247,20 +249,20 @@
 	                </tr>
 	                <tr>
 	                    <td class="align-right ">Full Name <span style="color:red; ">*</span>:</td>
-	                    <td class="align-left " colspan="2 "><input type="text" style="width: 260px; height: 30px; "
-	                    placeholder="Full Name..." required pattern="[A-Za-z]+" title="Not allow enter special characters " value=""></td>
+	                    <td class="align-left " colspan="2 "><input type="text" style="width: 260px; height: 30px; " class="enter" 
+	                    placeholder="Full Name..." id="fullName" required pattern="^[A-Za-zÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚÝàáâãèéêìíòóôõùúýĂăĐđĨĩŨũƠơƯưẠ-ỹ\s]+" title="Not allow enter special characters " value=""></td>
 
 	                </tr>
 
 	                <tr>
 	                    <td class="align-right ">Phone Number <span style="color:red; ">*</span>:</td>
 	                    <td class="align-left " colspan="2 ">
-	                    	<input type="number " placeholder="phone number..." required  title="Write Number: 0..9" value=" "  style="width: 260px; height: 30px;">
+	                    	<input type="text"  id="phone" placeholder="phone number..." required  title="10 or 11 number"  pattern="[0-9]{10,11}" style="width: 260px; height: 30px;" class="enter">
 	                    </td>
 	                </tr>
 	                <tr>
 	                    <td class="align-right ">Email<span style="color:red; ">*</span>:</td>
-	                    <td class="align-left " colspan="2 "><input type="email " required placeholder="Email..." style="width: 260px; height: 30px; "></td>
+	                    <td class="align-left " colspan="2 "><input type="email" required placeholder="Email..." style="width: 260px; height: 30px; " class="enter" id="email"></td>
 
 	                </tr>
 	                <tr>
@@ -269,7 +271,7 @@
 	                    </td>
 	                    <td class="align-left " colspan="2 ">
 
-							<select id="Country" style="width: 265px; height: 30px; " aria-required="true" aria-invalid="false">
+							<select id="country" class="enter" style="width: 265px; height: 30px;  "  required aria-required="true" aria-invalid="false">
 		                        <option value="">Select a country</option>
 		                        <option value="USA">USA</option>
 		                        <option value="Canada">Canada</option>
@@ -511,7 +513,7 @@
 	                </tr>
 
 	                <tr>
-	                    <td colspan="3 "> <input type="submit" value="Book Tuor "></td>
+	                    <td colspan="3 "> <input id="submit" type="submit" value="Book Tuor "></td>
 	                </tr>
 	            </table>
 	        </form>

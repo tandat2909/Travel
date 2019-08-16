@@ -23,9 +23,17 @@ var dataBase = new Array();
 
 	//set date book tuor;
 	var time = new Date();
-	day = time.getDate();
+	var month = parseInt(time.getMonth()) + 1;
+	if ( month < 10)
+		month = "0" + month;
 
-	alert(day);
+	var departure = document.getElementById('departure');
+	var daynow = time.getFullYear() + "-" +  month + "-" +  time.getDate();
+
+	departure.min = daynow;
+	departure.value = daynow;
+
+
 
 
 
